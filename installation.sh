@@ -3,7 +3,7 @@
 ### FUNCTIONS ###
 
 function install_zsh {
-    if [ "$1" == "--quiet" ]
+    if [ `whoami` == "root" ]
     then 
         apt-get install zsh git-core
     else 

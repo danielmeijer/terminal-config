@@ -8,13 +8,17 @@ My personal ZSH config.
 
 ## Installation
 
-- Run:
+- Normal installation:
 
 ```bash
-sudo bash installation.sh
+bash installation.sh
 ```
 
-You can add ```--quiet``` parameter to proceed directly to the installation process.
+Options: 
+
+```bash installation.sh --quiet```: parameter to proceed directly to the installation process.
+
+```bash installation.sh config```: update zsh config (installs plugins and refresh .zshrc config file).
 
 ## Usage
 

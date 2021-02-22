@@ -5,9 +5,9 @@
 function install_zsh {
     if [ `whoami` == "root" ]
     then 
-        apt-get install zsh git-core -y
+        apt-get install zsh git-core wget -y
     else 
-        sudo apt-get install zsh git-core
+        sudo apt-get install zsh git-core wget
     fi 
     wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
     chsh -s `which zsh`

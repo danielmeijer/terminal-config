@@ -3,7 +3,12 @@
 ### FUNCTIONS ###
 
 function install_zsh {
-    sudo apt-get install zsh git-core
+    if [ "$1" == "--quiet" ]
+    then 
+        apt-get install zsh git-core
+    else 
+        sudo apt-get install zsh git-core
+    fi 
     wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
     chsh -s `which zsh`
 }

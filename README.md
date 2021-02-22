@@ -16,7 +16,7 @@ bash installation.sh
 
 Options: 
 
-```bash installation.sh --quiet```: parameter to proceed directly to the installation process.
+```sudo bash installation.sh --quiet```: parameter to proceed directly to the installation process. NOTE: root required!
 
 ```bash installation.sh config```: update zsh config (installs plugins and refresh .zshrc config file).
 

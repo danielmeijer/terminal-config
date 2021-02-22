@@ -3,12 +3,7 @@
 ### FUNCTIONS ###
 
 function install_zsh {
-    if [ `whoami` == "root" ]
-    then 
-        apt-get install zsh git-core wget -y
-    else 
-        sudo apt-get install zsh git-core wget
-    fi 
+    $(if [ `whoami` == "root" ]; then echo sudo;fi) apt-get install zsh git-core wget -y
     wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
     chsh -s `which zsh`
 }

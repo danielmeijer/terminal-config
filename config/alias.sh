@@ -1,0 +1,1 @@
+alias casita="cd /mnt/d/Daniel/Code/"
